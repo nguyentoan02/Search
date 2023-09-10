@@ -33,7 +33,10 @@ public class SearchProgramming extends Menu<String> {
                 displaySearchResult("Binary Search", binarySearchResult);
                 break;
             case 2:
-                
+                int target2 = library.getInt("Enter the number to search for:");
+                int linearSearchResult = algorithm.linerSearch(array, target2);
+                displaySearchResult("Linear Search", linearSearchResult);
+                break;
             case 3:
                 System.exit(0);
                 break;
